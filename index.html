@@ -4,49 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anusree K K - Software Engineer Portfolio</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <img src="images/profile.jpg" alt="Profile Picture" class="profile-picture">
+  <header class="bg-dark text-white text-center py-5">
+    <div class="container">
+      <img src="images/profile.jpg" alt="Profile Picture" class="rounded-circle mb-3" width="150" height="150">
       <h1>Anusree K K</h1>
-      <h2>Software Engineer || Full Stack Developer</h2>
-      <p>I am a passionate Full Stack Developer eager to start a dynamic career in the IT industry. With a solid foundation in HTML, CSS, JavaScript, Node.js, and Flutter, I strive to create efficient and user-friendly applications.</p>
+      <h2 class="font-weight-light">Software Engineer || Full Stack Developer</h2>
+      <p class="lead">I am a passionate Full Stack Developer eager to start a dynamic career in the IT industry. With a solid foundation in HTML, CSS, JavaScript, Node.js, and Flutter, I strive to create efficient and user-friendly applications.</p>
     </div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <section id="about">
+  <section id="about" class="container my-5">
     <h2>About Me</h2>
     <p>As an MCA graduate with hands-on experience in full stack development, I am skilled in building responsive and dynamic web and mobile applications. I possess strong logical thinking, excellent communication skills, and a comprehensive understanding of agile processes.</p>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="container my-5">
     <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript, jQuery</li>
-      <li> Node.js, Python</li>
-      <li>Flutter</li>
-      <li>MySQL, DBMS</li>
-      <li>Git & GitHub</li>
-      <li>Agile Methodologies</li>
+    <ul class="list-unstyled">
+      <li><i class="fas fa-check-circle"></i> HTML, CSS, JavaScript, jQuery</li>
+      <li><i class="fas fa-check-circle"></i> Node.js, Python</li>
+      <li><i class="fas fa-check-circle"></i> Flutter</li>
+      <li><i class="fas fa-check-circle"></i> MySQL, DBMS</li>
+      <li><i class="fas fa-check-circle"></i> Git & GitHub</li>
+      <li><i class="fas fa-check-circle"></i> Agile Methodologies</li>
     </ul>
   </section>
 
-  <section id="experience">
+  <section id="experience" class="container my-5">
     <h2>Experience</h2>
-    <div class="experience-item">
+    <div class="experience-item mb-4">
       <h3>Software Engineer Trainee</h3>
       <p><strong>Coddle Technologies</strong></p>
       <p>July 2023 - January 2024, Kozhikode</p>
@@ -60,13 +68,13 @@
     </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="container my-5">
     <h2>Projects</h2>
-    <div class="project-item">
+    <div class="project-item mb-4">
       <h3>Clinic Management System</h3>
       <p>A comprehensive web application for managing clinic operations, including appointment booking and prescriptions. <strong>Technologies:</strong> React, Node.js</p>
     </div>
-    <div class="project-item">
+    <div class="project-item mb-4">
       <h3>Turf Management</h3>
       <p>An online platform for booking sports grounds. <strong>Technologies:</strong> Python, Microsoft SQL Server</p>
     </div>
@@ -76,22 +84,29 @@
     </div>
   </section>
 
-  <section id="education">
+  <section id="education" class="container my-5">
     <h2>Education</h2>
     <p><strong>Master of Computer Applications</strong><br>APJ Abdul Kalam University, 2021 - 2023 (7.14 CGPA)</p>
     <p><strong>Bachelor of Computer Applications</strong><br>Calicut University, 2020 (61%)</p>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="container my-5">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:anu4pavithran@gmail.com">anu4pavithran@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/anusree-k-k-software-developer">linkedin.com/in/anusree-k-k-software-developer</a></p>
     <p>GitHub: <a href="https://github.com/anusree-kk">github.com/anusree-kk</a></p>
     <p>Location: Kozhikode, Kerala, India</p>
+
+    <a href="https://drive.google.com/file/d/1TPlzdOXRsPBUjZ7JIn_3PPSl2A7zonGn/view?usp=drive_link" class="btn btn-primary mt-3" download>Download Resume</a>
+
   </section>
 
-  <footer>
+  <footer class="bg-dark text-white text-center py-3">
     <p>------ Thank you for connecting with me ------</p>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
