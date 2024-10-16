@@ -1,9 +1,10 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   color: #333;
   margin: 0;
   padding: 0;
+  overflow-x: hidden; 
 }
 
 h2 {
@@ -12,32 +13,23 @@ h2 {
   margin-bottom: 20px;
 }
 
-.list-unstyled i {
+.listUnstyled i {
   color: #4CAF50;
   margin-right: 10px;
 }
 
-.btn-primary {
+.btnPrimary {
   background-color: #5787ba;
   border-color: #55789e;
+}
 
+.fadeInUp {
+  transform: translateY(30px); 
+  transition: transform 0.6s ease, opacity 0.6s ease; 
+  opacity: 0;
 }
-  @media (max-width: 425px) {
 
-   .h1,  h1 {
-      font-size: 2.0rem;
-    }
-  .h2, h2 {
-    font-size: 1.50rem;
-}
-.lead {
-  font-size: 1.0rem;
-
-  }
-  .pb-5, .py-5 {
-    padding-bottom: .5rem !important;
-}
-h3 {
-  font-size: 1.25rem;
-}
+.fadeInUp.visible {
+  transform: translateY(0); 
+  opacity: 1;
 }
